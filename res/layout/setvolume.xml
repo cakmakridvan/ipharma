@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+android:background="#ffffff"
+     >
+
+    <Button
+        android:id="@+id/btn_geri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/stylebutton_backbutton" />
+
+        <EditText
+            android:id="@+id/secret_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/secret_textView"
+            android:layout_marginLeft="39dp"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp" >
+
+           
+        </EditText>
+
+                <Button
+                    android:id="@+id/secret_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secret_editText"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_text_color"
+                    android:text="Giriş Yap"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/secret_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:text="Admin Şifrenizi Giriniz"
+                    android:textColor="@color/black"
+                    android:textSize="50sp" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/secret_editText"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginTop="50dp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/secret_button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="32dp"
+                    android:text="Uygulamanızın ses seviyesini değiştirin "
+                    android:textColor="@color/black"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:id="@+id/charge_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/textView1"
+                    android:layout_alignTop="@+id/btn_geri"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/black" />
+
+                <!-- <RatingBar
+                    android:id="@+id/ratingBar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/secret_button"
+                    android:layout_toLeftOf="@+id/seekBar" /> -->
+
+</RelativeLayout>
